@@ -6,7 +6,12 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.white12,
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: Colors.red,
+        title: const Text('Nav Bar'),
+      ),
       body: Stack(
         children: [
           _bottomNavigationBar(),
@@ -96,25 +101,25 @@ Widget _iconsNavigationBar() {
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
     children: <Widget>[
       IconButton(
-        icon: const Icon(Icons.home),
+        icon: const Icon(Icons.home,color: Colors.red,),
         onPressed: () {},
       ),
       Padding(
         padding: const EdgeInsets.only(right: 40),
         child: IconButton(
-          icon: const Icon(Icons.chair),
+          icon: const Icon(Icons.chair,color: Colors.red,),
           onPressed: () {},
         ),
       ),
       Padding(
         padding: const EdgeInsets.only(left: 40),
         child: IconButton(
-          icon: const Icon(Icons.chat),
+          icon: const Icon(Icons.chat,color: Colors.red,),
           onPressed: () {},
         ),
       ),
       IconButton(
-        icon: const Icon(Icons.person),
+        icon: const Icon(Icons.person,color: Colors.red,),
         onPressed: () {},
       ),
     ],
